@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RangeSeekSliderEnhanced'
-  s.version          = '1.0.2'
+  s.version          = '1.1.0'
   s.summary          = 'RangeSeekSliderEnhanced can be used in replacement of UISlider.'
 
 # This description is used to generate tags and improve search results.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
   RangeSeekSliderEnhanced is forked with ♥️ from https://github.com/WorldDownTown/RangeSeekSlider and has some extra features.
                        DESC
-  s.swift_version = '4.2'
+  s.swift_version = '4.1'
   s.homepage         = 'https://github.com/nareshdb/RangeSeekSliderEnhanced'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
