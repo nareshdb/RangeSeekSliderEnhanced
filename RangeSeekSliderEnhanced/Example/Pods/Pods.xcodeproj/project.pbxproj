@@ -15,6 +15,12 @@
 		7512372B2181F6C40071DB8D /* RangeSeekSliderEnhanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751237282181F6C30071DB8D /* RangeSeekSliderEnhanced.swift */; };
 		7512372C2181F6C40071DB8D /* RangeSeekSliderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751237292181F6C30071DB8D /* RangeSeekSliderDelegate.swift */; };
 		7512372D2181F6C40071DB8D /* TapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512372A2181F6C30071DB8D /* TapticEngine.swift */; };
+		7512372E218201B40071DB8D /* RangeSeekSliderEnhanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751237282181F6C30071DB8D /* RangeSeekSliderEnhanced.swift */; };
+		7512372F218201B40071DB8D /* RangeSeekSliderEnhanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751237282181F6C30071DB8D /* RangeSeekSliderEnhanced.swift */; };
+		75123730218201B70071DB8D /* RangeSeekSliderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751237292181F6C30071DB8D /* RangeSeekSliderDelegate.swift */; };
+		75123731218201B80071DB8D /* RangeSeekSliderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751237292181F6C30071DB8D /* RangeSeekSliderDelegate.swift */; };
+		75123732218201BA0071DB8D /* TapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512372A2181F6C30071DB8D /* TapticEngine.swift */; };
+		75123733218201BB0071DB8D /* TapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512372A2181F6C30071DB8D /* TapticEngine.swift */; };
 		78E8A3C96B7829A42903982F7A3ED6FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		7F378A81D58578B75A2E05DDE7D2583B /* Pods-RangeSeekSliderEnhanced_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A639BBEA0DE1774816B2EDD7167F51 /* Pods-RangeSeekSliderEnhanced_Example-dummy.m */; };
 		C301347D7162B124F458CA0F5B852DB7 /* RangeSeekSliderEnhanced-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3699661F190DFFA9082154FF57FE8F /* RangeSeekSliderEnhanced-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -373,6 +379,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75123733218201BB0071DB8D /* TapticEngine.swift in Sources */,
+				75123731218201B80071DB8D /* RangeSeekSliderDelegate.swift in Sources */,
+				7512372F218201B40071DB8D /* RangeSeekSliderEnhanced.swift in Sources */,
 				0924804A60E41F6BDBAFB3BF9EECD2AE /* Pods-RangeSeekSliderEnhanced_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +390,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75123732218201BA0071DB8D /* TapticEngine.swift in Sources */,
+				75123730218201B70071DB8D /* RangeSeekSliderDelegate.swift in Sources */,
+				7512372E218201B40071DB8D /* RangeSeekSliderEnhanced.swift in Sources */,
 				7F378A81D58578B75A2E05DDE7D2583B /* Pods-RangeSeekSliderEnhanced_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
