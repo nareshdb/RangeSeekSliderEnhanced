@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RangeSeekSliderEnhanced'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = 'RangeSeekSliderEnhanced can be used in replacement of UISlider.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'RangeSeekSliderEnhanced/Classes/**/*'
+  s.source_files = 'RangeSeekSliderEnhanced/Classes/*'
   
   # s.resource_bundles = {
   #   'RangeSeekSliderEnhanced' => ['RangeSeekSliderEnhanced/Assets/*.png']
