@@ -1,15 +1,26 @@
 # RangeSeekSliderEnhanced
 
-[![CI Status](https://img.shields.io/travis/nareshdb/RangeSeekSliderEnhanced.svg?style=flat)](https://travis-ci.org/nareshdb/RangeSeekSliderEnhanced)
-[![Version](https://img.shields.io/cocoapods/v/RangeSeekSliderEnhanced.svg?style=flat)](https://cocoapods.org/pods/RangeSeekSliderEnhanced)
-[![License](https://img.shields.io/cocoapods/l/RangeSeekSliderEnhanced.svg?style=flat)](https://cocoapods.org/pods/RangeSeekSliderEnhanced)
-[![Platform](https://img.shields.io/cocoapods/p/RangeSeekSliderEnhanced.svg?style=flat)](https://cocoapods.org/pods/RangeSeekSliderEnhanced)
 
-## Example
+[![License](https://img.shields.io/:license-mit-blue.svg)](https://doge.mit-license.org)
+[![Language](https://img.shields.io/badge/language-swift-orange.svg?style=flat)](https://developer.apple.com/swift)
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Overview
+RangeSeekSliderEnhanced is forked from [RangeSeekSlider](https://github.com/WorldDownTown/RangeSeekSlider). It has some additions to it.
 
-## Requirements
+
+## Usage
+
+Please visit [RangeSeekSlider](https://github.com/WorldDownTown/RangeSeekSlider) for a complete tutorial. Also Please hit the star button on [RangeSeekSlider](https://github.com/WorldDownTown/RangeSeekSlider) and [TTRangeSlider](https://github.com/TomThorpe/TTRangeSlider)
+
+### Here is what I have added,
+
+- Chaging value of slider line between handles using ``sliderLineBetweenHandlesHeight``
+- Set whether is should be curved
+    ``shouldRoundCornersOfLineBetweenHandles``
+- Add an image to the line between handles
+    ``sliderLineBetweenHandlesImage``
+    
+All suggestions are welcome. Please add a feature request and I might work on it.
 
 ## Installation
 

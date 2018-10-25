@@ -63,6 +63,7 @@
 		751237282181F6C30071DB8D /* RangeSeekSliderEnhanced.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RangeSeekSliderEnhanced.swift; path = RangeSeekSliderEnhanced/Classes/RangeSeekSliderEnhanced.swift; sourceTree = "<group>"; };
 		751237292181F6C30071DB8D /* RangeSeekSliderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RangeSeekSliderDelegate.swift; path = RangeSeekSliderEnhanced/Classes/RangeSeekSliderDelegate.swift; sourceTree = "<group>"; };
 		7512372A2181F6C30071DB8D /* TapticEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TapticEngine.swift; path = RangeSeekSliderEnhanced/Classes/TapticEngine.swift; sourceTree = "<group>"; };
+		75123737218206FE0071DB8D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		76E31F430A9474D5D55B198E8B0E38C6 /* RangeSeekSliderEnhanced-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RangeSeekSliderEnhanced-prefix.pch"; sourceTree = "<group>"; };
 		82A639BBEA0DE1774816B2EDD7167F51 /* Pods-RangeSeekSliderEnhanced_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RangeSeekSliderEnhanced_Example-dummy.m"; sourceTree = "<group>"; };
 		8D86EEB9C36037965BD08AA0743B5811 /* Pods_RangeSeekSliderEnhanced_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RangeSeekSliderEnhanced_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,7 +78,6 @@
 		B5E23753E2A2FDC71136D5A9A074F0D6 /* Pods_RangeSeekSliderEnhanced_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RangeSeekSliderEnhanced_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89A751F33C1E3BC9D2030E6B03BA3FE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0CBCF31CC48C35B1897EFA7189640D /* Pods-RangeSeekSliderEnhanced_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RangeSeekSliderEnhanced_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		CE2B2F9C0317EA2877411A503D2FE035 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D86A3733753286200A3ADE94236D7557 /* Pods-RangeSeekSliderEnhanced_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RangeSeekSliderEnhanced_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E2F0E62327A2E39B18097EC92F1426D3 /* Pods-RangeSeekSliderEnhanced_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RangeSeekSliderEnhanced_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F4269D98532C469759EEE897A2DAB8E8 /* Pods-RangeSeekSliderEnhanced_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RangeSeekSliderEnhanced_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 				751237272181F6880071DB8D /* Classes */,
 				06FC37AD64143F85B67C4CC0F4ECEA59 /* LICENSE */,
 				172AB9B3E69588478C0776E5F0FFD3C9 /* RangeSeekSliderEnhanced.podspec */,
-				CE2B2F9C0317EA2877411A503D2FE035 /* README.md */,
+				75123737218206FE0071DB8D /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
