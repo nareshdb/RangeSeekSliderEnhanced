@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Vbr-lf-hVU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RangeSeekSliderEnhanced-->
+        <scene sceneID="0nT-3h-qgO">
+            <objects>
+                <viewController id="YI5-ii-W2I" customClass="ViewController" customModule="RangeSeekSliderDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yoI-CD-rId"/>
+                        <viewControllerLayoutGuide type="bottom" id="txE-g0-d3U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cMy-Iy-rlr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="817"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kWv-dq-irD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="817"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Standard Range:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xit-Zc-wrm">
+                                        <rect key="frame" x="16" y="20" width="128" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cco-Ve-xYl" customClass="RangeSeekSliderEnhanced" customModule="RangeSeekSliderEnhanced">
+                                        <rect key="frame" x="16" y="51" width="343" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="det-dS-ctH"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="handleBorderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Range:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbn-0Y-1Xt">
+                                        <rect key="frame" x="16" y="136" width="128" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7f-JQ-hG3" customClass="RangeSeekSliderEnhanced" customModule="RangeSeekSliderEnhanced">
+                                        <rect key="frame" x="16" y="167" width="343" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="lJ4-VZ-LCM"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="handleColor">
+                                                <color key="value" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="handleDiameter">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="selectedHandleDiameterMultiplier">
+                                                <real key="value" value="1.3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minDistance">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maxDistance">
+                                                <real key="value" value="80"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                <real key="value" value="150"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="selectedMinValue">
+                                                <real key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="selectedMaxValue">
+                                                <real key="value" value="140"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Range and Image Handle:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fes-B8-cqg">
+                                        <rect key="frame" x="16" y="252" width="260" height="21"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GG2-TF-2eT" customClass="RangeSeekSliderEnhanced" customModule="RangeSeekSliderEnhanced">
+                                        <rect key="frame" x="16" y="283" width="343" height="65"/>
+                                        <color key="tintColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="18c-sA-RZ0"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="handleImage" value="custom-handle"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="selectedMinValue">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorBetweenHandles">
+                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="selectedMaxValue">
+                                                <real key="value" value="80"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Range with Step:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38H-KW-IeN">
+                                        <rect key="frame" x="16" y="368" width="129.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYK-uZ-2E4" customClass="RangeSeekSliderEnhanced" customModule="RangeSeekSliderEnhanced">
+                                        <rect key="frame" x="16" y="399" width="343" height="65"/>
+                                        <color key="tintColor" red="1" green="0.59607843140000005" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="QKA-lp-5kD"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                <real key="value" value="5000"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="selectedMinValue">
+                                                <real key="value" value="500"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="selectedMaxValue">
+                                                <real key="value" value="4500"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="step">
+                                                <real key="value" value="500"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableStep" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hidden Labels:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPy-iA-ukh">
+                                        <rect key="frame" x="16" y="484" width="114.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jtv-Zz-aSj" customClass="RangeSeekSliderEnhanced" customModule="RangeSeekSliderEnhanced">
+                                        <rect key="frame" x="16" y="515" width="343" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="QMV-yr-RRb"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hideLabels" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Label String:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa5-0v-e5j">
+                                        <rect key="frame" x="16" y="600" width="160.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U21-5a-PwX" customClass="CustomRangeSeekSliderEnhanced" customModule="RangeSeekSliderEnhanced_Example" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="631" width="343" height="65"/>
+                                        <color key="tintColor" red="0.80392158030000005" green="0.80392158030000005" blue="0.80392158030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="cZv-Bk-HRh"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By WorldDownTown" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fyd-6b-Hzr">
+                                        <rect key="frame" x="230.5" y="716" width="128" height="17"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uYK-uZ-2E4" firstAttribute="top" secondItem="38H-KW-IeN" secondAttribute="bottom" constant="10" id="2Mk-eX-1Mw"/>
+                                    <constraint firstAttribute="trailing" secondItem="r7f-JQ-hG3" secondAttribute="trailing" constant="16" id="5rc-qr-ETl"/>
+                                    <constraint firstItem="fes-B8-cqg" firstAttribute="top" secondItem="r7f-JQ-hG3" secondAttribute="bottom" constant="20" id="6RL-n5-Afy"/>
+                                    <constraint firstItem="U21-5a-PwX" firstAttribute="leading" secondItem="kWv-dq-irD" secondAttribute="leading" constant="16" id="6eh-d3-6Dn"/>
+                                    <constraint firstItem="GG2-TF-2eT" firstAttribute="top" secondItem="fes-B8-cqg" secondAttribute="bottom" constant="10" id="8c1-mO-Pnq"/>
+                                    <constraint firstAttribute="trailing" secondItem="GG2-TF-2eT" secondAttribute="trailing" constant="16" id="CpZ-jV-eVc"/>
+                                    <constraint firstItem="Hbn-0Y-1Xt" firstAttribute="leading" secondItem="kWv-dq-irD" secondAttribute="leading" constant="16" id="EBE-2K-Ifb"/>
+                                    <constraint firstItem="aPy-iA-ukh" firstAttribute="leading" secondItem="kWv-dq-irD" secondAttribute="leading" constant="16" id="FKJ-jj-2Gh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cco-Ve-xYl" secondAttribute="trailing" constant="16" id="Gao-2f-ry3"/>
+                                    <constraint firstItem="Fyd-6b-Hzr" firstAttribute="top" secondItem="U21-5a-PwX" secondAttribute="bottom" constant="20" id="GpD-ZQ-5YH"/>
+                                    <constraint firstItem="r7f-JQ-hG3" firstAttribute="leading" secondItem="kWv-dq-irD" secondAttribute="leading" constant="16" id="H2t-cX-pZZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jtv-Zz-aSj" secondAttribute="trailing" constant="16" id="LOe-EM-Qcb"/>
+                                    <constraint firstItem="Cco-Ve-xYl" firstAttribute="leading" secondItem="kWv-dq-irD" secondAttribute="leading" constant="16" id="Nce-UP-tEa"/>
+                                    <constraint firstItem="U21-5a-PwX" firstAttribute="top" secondItem="Sa5-0v-e5j" secondAttribute="bottom" constant="10" id="Nz8-Ki-We2"/>
+                                    <constraint firstItem="Jtv-Zz-aSj" firstAttribute="leading" secondItem="kWv-dq-irD" secondAttribute="leading" constant="16" id="Q44-mr-Iu1"/>
+                                    <constraint firstItem="Jtv-Zz-aSj" firstAttribute="top" secondItem="aPy-iA-ukh" secondAttribute="bottom" constant="10" id="Quh-v6-6bI"/>
+                                    <constraint firstItem="Sa5-0v-e5j" firstAttribute="leading" secondItem="kWv-dq-irD" secondAttribute="leading" constant="16" id="Rln-1N-0Sq"/>
+                                    <constraint firstItem="Cco-Ve-xYl" firstAttribute="width" secondItem="kWv-dq-irD" secondAttribute="width" constant="-32" id="Yhh-Kj-jxM"/>
+                                    <constraint firstItem="Xit-Zc-wrm" firstAttribute="top" secondItem="kWv-dq-irD" secondAttribute="top" constant="20" id="bqP-0N-tKu"/>
+                                    <constraint firstItem="aPy-iA-ukh" firstAttribute="top" secondItem="uYK-uZ-2E4" secondAttribute="bottom" constant="20" id="cAz-fN-Nwj"/>
+                                    <constraint firstItem="38H-KW-IeN" firstAttribute="leading" secondItem="kWv-dq-irD" secondAttribute="leading" constant="16" id="cev-ad-OtW"/>
+                                    <constraint firstItem="38H-KW-IeN" firstAttribute="top" secondItem="GG2-TF-2eT" secondAttribute="bottom" constant="20" id="dz5-Au-n7v"/>
+                                    <constraint firstItem="GG2-TF-2eT" firstAttribute="leading" secondItem="kWv-dq-irD" secondAttribute="leading" constant="16" id="eZO-qt-7dY"/>
+                                    <constraint firstAttribute="trailing" secondItem="uYK-uZ-2E4" secondAttribute="trailing" constant="16" id="gxA-o1-4XN"/>
+                                    <constraint firstItem="Sa5-0v-e5j" firstAttribute="top" secondItem="Jtv-Zz-aSj" secondAttribute="bottom" constant="20" id="hYp-Yn-HxO"/>
+                                    <constraint firstItem="fes-B8-cqg" firstAttribute="leading" secondItem="kWv-dq-irD" secondAttribute="leading" constant="16" id="kKc-BP-8se"/>
+                                    <constraint firstAttribute="trailing" secondItem="U21-5a-PwX" secondAttribute="trailing" constant="16" id="lwv-A4-8Kp"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fyd-6b-Hzr" secondAttribute="trailing" constant="16" id="o1b-bW-Hr4"/>
+                                    <constraint firstItem="Hbn-0Y-1Xt" firstAttribute="top" secondItem="Cco-Ve-xYl" secondAttribute="bottom" constant="20" id="o8u-Li-iJf"/>
+                                    <constraint firstItem="r7f-JQ-hG3" firstAttribute="top" secondItem="Hbn-0Y-1Xt" secondAttribute="bottom" constant="10" id="q2B-LL-LK4"/>
+                                    <constraint firstItem="uYK-uZ-2E4" firstAttribute="leading" secondItem="kWv-dq-irD" secondAttribute="leading" constant="16" id="qoJ-8p-Wbb"/>
+                                    <constraint firstItem="Cco-Ve-xYl" firstAttribute="top" secondItem="Xit-Zc-wrm" secondAttribute="bottom" constant="10" id="tcS-KL-Ouw"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fyd-6b-Hzr" secondAttribute="bottom" constant="20" id="tyf-7X-eok"/>
+                                    <constraint firstItem="Xit-Zc-wrm" firstAttribute="leading" secondItem="kWv-dq-irD" secondAttribute="leading" constant="16" id="xHM-78-2RE"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kWv-dq-irD" secondAttribute="bottom" id="0oO-YT-OOf"/>
+                            <constraint firstAttribute="trailing" secondItem="kWv-dq-irD" secondAttribute="trailing" id="OLl-Yy-ZUu"/>
+                            <constraint firstItem="kWv-dq-irD" firstAttribute="top" secondItem="cMy-Iy-rlr" secondAttribute="top" id="YQk-N1-uQw"/>
+                            <constraint firstItem="kWv-dq-irD" firstAttribute="leading" secondItem="cMy-Iy-rlr" secondAttribute="leading" id="rLI-E1-h7a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="RangeSeekSliderEnhanced" id="2lH-iD-HaR"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="817"/>
+                    <connections>
+                        <outlet property="rangeSlider" destination="Cco-Ve-xYl" id="1Cz-vq-zgX"/>
+                        <outlet property="rangeSliderCurrency" destination="r7f-JQ-hG3" id="GhL-WB-bZW"/>
+                        <outlet property="rangeSliderCustom" destination="GG2-TF-2eT" id="2l7-U9-zs6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qz7-Zy-3PZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1058" y="1050"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jns-Ue-60b">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vbr-lf-hVU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hyd-IE-OKO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YI5-ii-W2I" kind="relationship" relationship="rootViewController" id="DZ2-Ti-09o"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kBf-uI-4f5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304" y="1050"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="custom-handle" width="16" height="16"/>
+    </resources>
+</document>

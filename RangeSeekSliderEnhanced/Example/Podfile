@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RangeSeekSliderEnhanced_Example' do
+  pod 'RangeSeekSliderEnhanced', :path => '../'
+
+  target 'RangeSeekSliderEnhanced_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

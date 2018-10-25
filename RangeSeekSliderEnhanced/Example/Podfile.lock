@@ -1,0 +1,16 @@
+PODS:
+  - RangeSeekSliderEnhanced (0.1.0)
+
+DEPENDENCIES:
+  - RangeSeekSliderEnhanced (from `../`)
+
+EXTERNAL SOURCES:
+  RangeSeekSliderEnhanced:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RangeSeekSliderEnhanced: 8209c0cdf4fe764baf2aac2a40b7781d4857ee55
+
+PODFILE CHECKSUM: b1cd2378e0593ad2dccc804fbf9c6669eb1089f3
+
+COCOAPODS: 1.5.3

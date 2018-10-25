@@ -1,0 +1,6 @@
+framework module RangeSeekSliderEnhanced {
+  umbrella header "RangeSeekSliderEnhanced-umbrella.h"
+
+  export *
+  module * { export * }
+}
