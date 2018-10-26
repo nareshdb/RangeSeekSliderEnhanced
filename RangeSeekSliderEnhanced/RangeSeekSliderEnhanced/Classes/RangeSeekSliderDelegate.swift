@@ -44,13 +44,6 @@ public protocol RangeSeekSliderEnhancedDelegate: class {
     /// - Returns: String to be replaced
     func rangeSeekSlider(_ slider: RangeSeekSliderEnhanced, stringForMaxValue: CGFloat) -> String?
     
-    /// Called when the RangeSeekSliderEnhanced values are changed. A return `String?` Value is used to display instead of the default value.
-    ///
-    /// - Parameters:
-    ///   - slider: RangeSeekSliderEnhanced
-    ///   - stringForSelectedValue: value
-    /// - Returns: String to be replaced
-    func rangeSeekSlider(_ slider: RangeSeekSliderEnhanced, stringForSelectedValue: CGFloat) -> String?
 }
 
 
@@ -63,5 +56,4 @@ public extension RangeSeekSliderEnhancedDelegate {
     func didEndTouches(in slider: RangeSeekSliderEnhanced) {}
     func rangeSeekSlider(_ slider: RangeSeekSliderEnhanced, stringForMinValue minValue: CGFloat) -> String? { return nil }
     func rangeSeekSlider(_ slider: RangeSeekSliderEnhanced, stringForMaxValue maxValue: CGFloat) -> String? { return nil }
-    func rangeSeekSlider(_ slider: RangeSeekSliderEnhanced, stringForSelectedValue: CGFloat) -> String? { return nil }
 }
