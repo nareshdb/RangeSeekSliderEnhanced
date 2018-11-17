@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RangeSeekSliderEnhanced'
-  s.version          = '1.1.3'
+  s.version          = '1.1.4'
   s.summary          = 'RangeSeekSliderEnhanced can be used in replacement of UISlider.'
 
 # This description is used to generate tags and improve search results.
