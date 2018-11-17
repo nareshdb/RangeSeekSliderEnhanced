@@ -252,7 +252,7 @@ import UIKit
 
     // MARK: - private stored properties
 
-    private enum HandleTracking { case none, left, right }
+    private enum HandleTracking { case none, left, right, overlapped }
     private var handleTracking: HandleTracking = .none
 
     private let sliderLine: CALayer = CALayer()
@@ -335,7 +335,10 @@ import UIKit
         let distanceFromLeftHandle: CGFloat = touchLocation.distance(to: leftHandle.frame.center)
         let distanceFromRightHandle: CGFloat = touchLocation.distance(to: rightHandle.frame.center)
 
-        if distanceFromLeftHandle < distanceFromRightHandle && !disableRange {
+        if distanceFromLeftHandle == distanceFromRightHandle {
+            handleTracking = .overlapped
+        }
+        else if distanceFromLeftHandle < distanceFromRightHandle && !disableRange {
             handleTracking = .left
         } else if selectedMaxValue == maxValue && leftHandle.frame.midX == rightHandle.frame.midX {
             handleTracking = .left
@@ -362,6 +365,17 @@ import UIKit
         let selectedValue: CGFloat = percentage * (maxValue - minValue) + minValue
 
         switch handleTracking {
+        case .overlapped:
+            if selectedValue < selectedMinValue { //handles were overlapped, then user swiped in the left direction, so handleTracking is left now
+                selectedMinValue = min(selectedValue, selectedMaxValue)
+            }
+            else { //User swiped in the right direction so handleTracking is right now
+                if disableRange && selectedValue >= minValue {
+                    selectedMaxValue = selectedValue
+                } else {
+                    selectedMaxValue = max(selectedValue, selectedMinValue)
+                }
+            }
         case .left:
             selectedMinValue = min(selectedValue, selectedMaxValue)
         case .right:
@@ -375,8 +389,19 @@ import UIKit
             // no need to refresh the view because it is done as a side-effect of setting the property
             break
         }
-
+    
         refresh()
+        
+        if handleTracking == .overlapped && selectedMinValue != selectedMaxValue {
+            if abs(selectedMinValue.distance(to: selectedValue)) < abs(selectedMaxValue.distance(to: selectedValue)) {
+                //selected value is very close to selectedMinValue, so handle must be left one
+                handleTracking = .left
+            }
+            else {
+                //otherwise it is the right one
+                handleTracking = .right
+            }
+        }
 
         return true
     }
@@ -681,6 +706,8 @@ import UIKit
                 selectedMaxValue = selectedMinValue + minDistance
             case .none:
                 break
+            case .overlapped:
+                break
             }
         } else if diff > maxDistance {
             switch handleTracking {
@@ -689,6 +716,8 @@ import UIKit
             case .right:
                 selectedMaxValue = selectedMinValue + maxDistance
             case .none:
+                break
+            case .overlapped:
                 break
             }
         }
