@@ -14,7 +14,7 @@ Please visit [RangeSeekSlider](https://github.com/WorldDownTown/RangeSeekSlider)
 
 ### Here is what I have added,
 
-- Chaging height of slider line between handles using ``sliderLineBetweenHandlesHeight``
+- Changing height of slider line between handles using ``sliderLineBetweenHandlesHeight``
 - Set whether line between handles should have curved ends
     ``shouldRoundCornersOfLineBetweenHandles``
 - Add an image to the line between handles
